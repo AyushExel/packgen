@@ -9,7 +9,7 @@ on:
     branches:
       - main
     paths:
-      - 'my_package/**'
+      - 'yolov5/**'
 
 jobs:
   changelog:

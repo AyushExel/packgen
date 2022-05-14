@@ -1,23 +1,23 @@
 Installation
 ============
 
-**my-package** supports Python >= 3.7.
+**yolov5** supports Python >= 3.7.
 
 ## Installing with `pip`
 
-**my-package** is available [on PyPI](https://pypi.org/project/my-package/). Just run
+**yolov5** is available [on PyPI](https://pypi.org/project/yolov5/). Just run
 
 ```bash
-pip install my-package
+pip install yolov5
 ```
 
 ## Installing from source
 
-To install **my-package** from source, first clone [the repository](https://github.com/allenai/python-package-template):
+To install **yolov5** from source, first clone [the repository](https://github.com/AyushExel/packgen):
 
 ```bash
-git clone https://github.com/allenai/python-package-template.git
-cd python-package-template
+git clone https://github.com/AyushExel/packgen.git
+cd packgen
 ```
 
 Then run

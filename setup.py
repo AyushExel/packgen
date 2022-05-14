@@ -27,15 +27,17 @@ def read_requirements(filename: str):
 # version.py defines the VERSION and VERSION_SHORT variables.
 # We use exec here so we don't import cached_path whilst setting up.
 VERSION = {}  # type: ignore
-with open("my_package/version.py", "r") as version_file:
+with open("yolov5/version.py", "r") as version_file:
     exec(version_file.read(), VERSION)
 
 setup(
-    name="my-package",
+    name="yolov5",
     version=VERSION["VERSION"],
     description="",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
+    entry_points={
+    },
     classifiers=[
         "Intended Audience :: Science/Research",
         "Development Status :: 3 - Alpha",
@@ -51,7 +53,7 @@ setup(
     packages=find_packages(
         exclude=["*.tests", "*.tests.*", "tests.*", "tests"],
     ),
-    package_data={"my_package": ["py.typed"]},
+    package_data={"yolov5": ["py.typed"]},
     install_requires=read_requirements("requirements.txt"),
     extras_require={"dev": read_requirements("dev-requirements.txt")},
     python_requires=">=3.7",
