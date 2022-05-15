@@ -54,7 +54,7 @@ setup(
     author_email="contact@allenai.org",
     license="Apache",
     packages=find_packages(
-        exclude=["*.tests", "*.tests.*", "tests.*", "tests"],
+        exclude=["*.tests", "*.tests.*", "tests.*", "tests", "env"],
     ),
     package_data={"yolov5": ["py.typed"]},
     install_requires=read_requirements("requirements.txt"),
